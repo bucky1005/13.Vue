@@ -1,6 +1,7 @@
 import { createRouter, createWebHashHistory, createWebHistory } from 'vue-router';
-import HomeView from '@/views/01_HomeView.vue';
-import PathVariable from '@/views/PathVariable.vue';
+import HomeView from '@/views/01_router/HomeView.vue';
+import PathVariable from '@/views/01_router/PathVariable.vue';
+import QueryString from '@/views/01_router/QueryString.vue';
 
 const router = createRouter({
     /* 라우터의 history 프로퍼티에 들어갈 수 있는 값은 createWebHashHistory()와 createWebHistory() 두 가지이다.
@@ -17,8 +18,12 @@ const router = createRouter({
             component: HomeView
         },
         {
-            path: '/pathvariable',
+            path: '/pathvariable/:id',  // App.vue의 uri정보에 담긴 변수를 :id로 받아온다.
             component: PathVariable
+        },
+        {
+            path: '/querystring',
+            component: QueryString
         }
     ]
 });
