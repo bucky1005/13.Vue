@@ -1,3 +1,5 @@
+<!-- Props의 read only 속성 -->
+
 <template>
     <h1> {{  props.readValue }}</h1>
     <!--
