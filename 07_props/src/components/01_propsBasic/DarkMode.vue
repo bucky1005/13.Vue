@@ -1,3 +1,6 @@
+<!-- 
+    자식 컴포넌트가 부모 컴포넌트로 발산(emit(해당 이벤트 이름))
+ -->
 <template>
     <!-- 부모의 toggle 이벤트를 호출하는 emit 함수 적용 -->
     <button @click="emit('toggle')">다크 모드</button>
