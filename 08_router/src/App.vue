@@ -18,20 +18,22 @@ import { RouterLink, RouterView } from 'vue-router';
     이를 통해 페이지 간의 전환을 구현할 수 있다.
 
     일반적으로 RouterView는 RouterLink와 함께 사용되며 라우팅 기능을 완성한다.
- -->
+-->
 <template>
     <header>
         <h1>Router 사용하기</h1>
         <hr>
         <div class="wrapper">
-            <h2>basic router</h2>
+            <!-- <h2>basic router</h2>
             <nav>
                 <RouterLink to="/" active-class="active">Home</RouterLink>
-                <!-- 경로에 '/'가 추가되면 경로의 뎁스가 추가되기 때문에 router.js에도 수정이 필요하지만
-                    쿼리스트링 방식은 경로가 추가되는 것이 아니므로 별도의 수정 작업을 요구하지 않는다.
-                -->
+                // 경로에 '/'가 추가되면 경로의 depth가 추가되기 때문에 router.js에도 수정이 필요하지만
+                //  쿼리스트링 방식은 경로가 추가되는 것이 아니므로 별도의 수정 작업을 요구하지 않는다.
                 <RouterLink to="/pathvariable/1" active-class="active" replace>PathVariable</RouterLink>
                 <RouterLink to="/querystring?name=홍길동&age=20" active-class="active">QueryString</RouterLink>
+            </nav> -->
+            <nav>
+                Router
             </nav>
         </div>
     </header>
